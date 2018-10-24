@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   before_action :find_event, only: [:show, :update, :edit, :destroy]
   
   def index
-    @events = Event.all.order("created_at DESC")
+    @events = Event.all.order("created_at DESC").take(10)
   end 
 
   def create
@@ -25,9 +25,16 @@ class EventsController < ApplicationController
   end 
   
   def update
+    if @event.update(event_params)
+      redirect_to @event
+    else
+      render 'edit'
+    end
   end 
   
   def destroy
+    @event.destroy
+    redirect_to events_path
   end 
   
   private
