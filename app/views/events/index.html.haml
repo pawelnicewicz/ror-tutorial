@@ -4,3 +4,5 @@
   %h2= link_to truncate(event.content, length:20), event
   %p= time_ago_in_words(event.created_at)
   %p= truncate(event.content, length:50)
+  
+= link_to "Create Event", new_event_path
