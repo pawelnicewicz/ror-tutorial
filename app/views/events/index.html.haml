@@ -1,0 +1,6 @@
+%h1 Index
+
+- @events.each do |event|
+  %h2= link_to truncate(event.content, length:20), event
+  %p= time_ago_in_words(event.created_at)
+  %p= truncate(event.content, length:50)
