@@ -5,4 +5,5 @@
   %p= time_ago_in_words(event.created_at)
   %p= truncate(event.content, length:50)
   
-= link_to "Create Event", new_event_path
+- if user_signed_in?
+  = link_to "Create Event", new_event_path
