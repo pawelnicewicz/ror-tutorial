@@ -1,3 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 $lato-font: 'Lato', sans-serif;
+
+body{
+  background: #ffffff;
+}
+
+.navbar{
+  background: #000000;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: -30px 10px -6px -6px #999;
+}

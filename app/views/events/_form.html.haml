@@ -1,10 +1,24 @@
-= simple_form_for @event do |f|
-  = f.input :content
-  = f.input :start_date, as: :date, start_year: Date.today.year,
-                              end_year: Date.today.year + 1,
-                              order: [:day, :month, :year]
-  = f.input :end_date, as: :date, start_year: Date.today.year,
-                              end_year: Date.today.year + 1,
-                              order: [:day, :month, :year]
-  = f.input :place
-  = f.button :submit
+.container-fluid
+  .container-form
+    = simple_form_for @event do |f|
+      .form-group.row
+        .col-sm-2= f.label :content, "Text"
+        .col-sm-10= f.input :content, label: false
+      .form-group.row
+        .col-sm-2= f.label :start_date, "Start date"
+        .col-sm-10= f.input :start_date, as: :date, start_year: Date.today.year, 
+                            end_year: Date.today.year + 1, 
+                            order: [:day, :month, :year],
+                            label: false
+      .form-group.row
+        .col-sm-2= f.label :end_date, "End date"
+        .col-sm-10= f.input :end_date, as: :date, start_year: Date.today.year,
+                            end_year: Date.today.year + 1,
+                            order: [:day, :month, :year],
+                            label: false
+      .form-group.row
+        .col-sm-2= f.label :place, "Place"
+        .col-sm-10= f.input :place, label: false
+      .form-group.row
+        .col-sm-2
+        .col-sm-10= f.button :submit, class: "create_event_button"

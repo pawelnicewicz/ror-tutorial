@@ -1,0 +1,39 @@
+#event_content {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+#event_place {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.create_event_button {
+  margin-left: 0.25rem;
+}
+
+.container-form {
+    width:100%;
+  @media (min-width: 992px) {
+    width: 60%;
+    margin: auto;}
+}
+
+h1{
+  text-align: center;  
+}
+
+.container-fluid{
+  margin: auto;  
+}
+
+.form-div {
+  width:100%;
+  @media (min-width: 992px) {
+    width: 50%;
+    margin: auto;}
+  background: white;
+  border-radius: 25px;
+  padding-bottom: 8px;
+  padding-top: 5px;
+}
