@@ -1,0 +1,16 @@
+// Place all the styles related to the homepage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.homepage-img-div{
+  width: auto;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.homepage-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

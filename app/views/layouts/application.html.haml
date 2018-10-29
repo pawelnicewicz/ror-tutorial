@@ -17,7 +17,7 @@
   
   %body
     %nav.navbar.navbar-expand-lg.navbar-dark.sticky-top
-      = link_to homepage_path do
+      = link_to root_path do
         %i.fas.fa-chart-bar
         .navbar-brand CompanyName
       %button{:class => "navbar-toggler", :type => "button",
@@ -29,7 +29,7 @@
         -# mr-auto -- items on the left, ml-auto -- items on the right
         %ul.navbar-nav.ml-auto
           %li.nav-item
-            = link_to homepage_path do
+            = link_to root_path do
               .nav-link About
           %li.nav-item
             = link_to new_user_session_path do
